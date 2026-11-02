@@ -1,0 +1,50 @@
+# =============================================================================
+# NAYVO — Archivos ignorados por Git
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+
+# --- Entorno virtual ---
+venv/
+env/
+.venv/
+.env/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Sistema operativo ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- Datos del proyecto ---
+# Las imágenes del dataset NO se suben al repositorio por su tamaño.
+# Cada persona debe crear su propio dataset con sus fotografías.
+dataset/billetes_mexicanos/imagenes_originales/
+dataset/billetes_mexicanos/procesadas/
+dataset/billetes_mexicanos/entrenamiento/
+dataset/billetes_mexicanos/validacion/
+dataset/billetes_mexicanos/prueba/
+
+# --- Modelos entrenados (archivos grandes) ---
+models/*.keras
+models/*.h5
+models/*.tflite
+
+# --- Resultados de entrenamiento ---
+results/
+
+# --- Archivos temporales ---
+*.tmp
+*.log
